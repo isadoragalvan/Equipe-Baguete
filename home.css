@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-color: #e3c397;
 }
 
 
@@ -7,25 +8,29 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
-    height: 100px;
+    background-color: #B76E2A;
+    height: 50px;
     color: white;
     padding: 20px;
 }
-
-
-#perfil{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
 
 header p {
     font-size: 25px;
     text-transform: uppercase;
     padding-right: 10px;
     font-weight: bold;
+    font-family: monospace;
+}
+
+header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    height: 72.5px;
+    margin-right: -1575px;
 }
 
 
@@ -47,16 +52,17 @@ header p {
 
 .grupo-entradas{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
 .entrada{
-    height: 284px;
-    width: 219px;
+    border-radius: 20px;
+    margin: 30px;
+    height: 290.33px;
+    width: 290.33px;
     background-position: center;
     background-size: cover;
-    border-radius: 34px;
     cursor: pointer;
     transition-delay: 0.2s;
     transition-duration: 0.2s, 0.2;
@@ -85,3 +91,14 @@ header p {
     height: 100%;
     color: white;
 }
+
+.centro{
+    height: 440px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s, 0.2;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}   

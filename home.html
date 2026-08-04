@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <title> Home</title>
+    <link rel="icon" type="image/png" href="logo.png">
 </head>
 
 
@@ -14,17 +15,14 @@
 
 
     <header>
-        <!-- ver se deu certo a imagem no topo -->
-        <img src="gato_baguete.jpeg" alt="" id="perfil">
-        <h1>Arte em Baguetes</h1>
+        <h1>Arte em <br> Baguetes</h1>
+        <img src="logo-sem-fundo.png" alt="">
         <p>Baguete</p>
     </header>
 
-    <!-- arrumar para funcionar -->
-    <div class="pesquisa">
-        <input type="text" placeholder="Pesquisar">
-    </div>
-
+<form id="formPesquisa" class="pesquisa">
+    <input type="text" id="pesquisa" placeholder="Pesquisar">
+</form>
 
     <!-- arrumar para cada entrada dar em uma página -->
     <div class="grupo-entradas">
@@ -34,22 +32,37 @@
         </div>
         <div class="entrada" style="background-image: url(pão-2.jpg);">
             <a href="" div class="btn-entrar">
-            <p>vendas</p></a>
+            <p>Vendas</p></a>
         </div>
         <div class="entrada" style="background-image: url(cesta.jpg);">
             <a href="" div class="btn-entrar">
-            <p>histórico</p></a>
+            <p>Histórico</p></a>
+        </div>
+        <div class="entrada" style="background-image: url(pães-2.jpg);">
+            <a href="" div class="btn-entrar">
+            <p>Locais</p></a>
+        </div>
+        <div class="entrada" style="background-image: url(pães.jpg);">
+            <a href="" div class="btn-entrar">
+            <p>Curiosidades</p></a>
         </div>
     </div>
+
+        <div class="centro" style="background-image: url(img1.jpg);">
+        </div>
     
-    <!-- fazer com banco de dados (aprender amanha com Nicolas) -->
-    <div class="grupo-avaliacoes">
+    <script>
+        const form = document.pesquisa;
+const pesquisa = document.getElementById("pesquisa");
 
-        <div class="lista-avaliacoes">
-            <div class="avaliacao"></div>
-        </div>
-    </div>
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    console.log("Pesquisando:", pesquisa.value);
+
+    pesquisa.value = "";
+});
+    </script>
 </body>
-
 
 </html>
