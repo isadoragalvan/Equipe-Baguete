@@ -1,5 +1,5 @@
 body{
-    background-color: #e3c397;
+    background-color: #b58b5a;
 }
 
 h1{
@@ -13,7 +13,7 @@ h1{
 }
 
 .le{
-    width: 50%;
+    width: 90%;
     text-align: justify-all;
 }
 
@@ -28,17 +28,16 @@ h1{
     font-weight: normal;
 }
 
-.ld{
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    display: flex;
-  gap: 10px;
+.le img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-img{
-    width: 400px;
-    height: 400px;
-    margin: 20px;
+.le img:hover {
+    transform: scale(1.1);
 }
